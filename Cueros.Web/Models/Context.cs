@@ -11,13 +11,12 @@ namespace Cueros.Web.Models
         public DbSet<Material> Materials { get; set; }
         public DbSet<Supplier> Suppliers { get; set; }
         public DbSet<Picture> Pictures { get; set; }
+        public DbSet<Composed> Composed { get; set; }
+        public DbSet<Supplies> Supplies { get; set; }
 
-        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        public Context():base()
         {
-            modelBuilder.Entity<Product>().ToTable("Products");
-            modelBuilder.Entity<Material>().ToTable("Materials");
-            modelBuilder.Entity<Supplier>().ToTable("Suppliers");
-            modelBuilder.Entity<Picture>().ToTable("Pictures");
+
         }
     }
 }

@@ -97,6 +97,14 @@ namespace Cueros.Web.Models
             context.Products.Add(productEight);
             context.SaveChanges();
             #endregion
+            #region relations
+            Composed composed = new Composed()
+            {
+                MaterialID = context.Materials.Find(1).ProductID,
+                ProductID = context.Products.Find(1).ProductID,
+            };
+            context.SaveChanges();
+            #endregion
         }
     }
 }

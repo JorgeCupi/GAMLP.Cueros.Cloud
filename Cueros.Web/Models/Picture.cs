@@ -7,7 +7,7 @@ namespace Cueros.Web.Models
 {
     public class Picture
     {
-        public int ID { get; set; }
+        public int PictureID { get; set; }
         public string URL { get; set; }
         public string Description { get; set; }
     }

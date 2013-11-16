@@ -7,7 +7,7 @@ namespace Cueros.Web.Models
 {
     public class Product
     {
-        public int ID { get; set; }
+        public int ProductID { get; set; }
         public string Name { get; set; }
         public string Line { get; set; }
         public string Model { get; set; }

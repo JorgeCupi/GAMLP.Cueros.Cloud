@@ -60,7 +60,7 @@ namespace Cueros.Web.Controllers
             {
                 if (ModelState.IsValid)
                 {
-                    Product product = db.Products.Find(p.ID);
+                    Product product = db.Products.Find(p.ProductID);
                     UpdateModel(product);
                     db.SaveChanges();
                     return RedirectToAction("Index");
