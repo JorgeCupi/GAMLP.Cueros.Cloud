@@ -15,6 +15,7 @@ namespace Cueros.API.Controllers
         {
             return Json(CuerosContext.DB.Pictures.ToList(), JsonRequestBehavior.AllowGet);
         }
+
         [HttpGet]
         public object Get(int pictureID)
         {
