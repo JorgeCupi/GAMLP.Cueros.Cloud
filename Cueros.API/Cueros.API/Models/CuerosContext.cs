@@ -95,6 +95,15 @@ namespace Cueros.API.Models
                     });
                 context.SaveChanges();
                 #endregion
+                #region Composed
+                context.Compose.Add(new Compose()
+                {
+                    MaterialID=1,
+                    Quantity=10,
+                    Unit=Unit.dm2,
+                    ProductID=1,
+                });
+                #endregion
                 base.Seed(context);
             }
         }

@@ -65,6 +65,8 @@ namespace Cueros.API.Models.Repository
                 return false;
             if (product.Quantity < order.Quantity)
                 return false;
+            product.Quantity -= order.Quantity;
+            CuerosContext.DB.SaveChanges();
             return true;
         }
     }
