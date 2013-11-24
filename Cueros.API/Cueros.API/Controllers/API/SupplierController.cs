@@ -12,7 +12,7 @@ namespace Cueros.API.Controllers
         [HttpGet]
         public object GetAll()
         {
-            return Json(CuerosContext.DB.Suppliers.ToList(), JsonRequestBehavior.AllowGet);
+            return Json(CuerosContext.DB.Suppliers.ToList(), JsonRequestBehavior.AllowGet); 
         }
         [HttpGet]
         public object Get(int supplierID)

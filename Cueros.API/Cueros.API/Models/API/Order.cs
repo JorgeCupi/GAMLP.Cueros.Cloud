@@ -4,18 +4,17 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
 
-namespace Cueros.API.Models
+namespace Cueros.API.Models.API
 {
-    public class Compose
+    public class Order
     {
-        public int ComposeID { get; set; }
-
+        public int OrderID { get; set; }
+        public DateTime Date { get; set; }
+        
         public int ProductID { get; set; }
-        public int MaterialID { get; set; }
-            
-        [ForeignKey("MaterialID")]
-        public virtual Material Material { get; set; }
         [ForeignKey("ProductID")]
         public virtual Product Product { get; set; }
+
+        public int Quantity { get; set; }
     }
 }

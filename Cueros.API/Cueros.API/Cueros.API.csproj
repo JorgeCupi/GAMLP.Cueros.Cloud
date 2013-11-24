@@ -216,24 +216,32 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
-    <Compile Include="Controllers\ComposeController.cs" />
+    <Compile Include="Controllers\API\ErrorHandler\APIErrorHandlerAttribute.cs" />
+    <Compile Include="Controllers\API\ErrorHandler\JsonMessage.cs" />
+    <Compile Include="Controllers\API\ComposeController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\MaterialController.cs" />
-    <Compile Include="Controllers\PictureController.cs" />
-    <Compile Include="Controllers\ProductController.cs" />
-    <Compile Include="Controllers\SupplierController.cs" />
-    <Compile Include="Controllers\SuppliesController.cs" />
-    <Compile Include="Controllers\ValuesController.cs" />
+    <Compile Include="Controllers\API\MaterialController.cs" />
+    <Compile Include="Controllers\API\PictureController.cs" />
+    <Compile Include="Controllers\API\ProductController.cs" />
+    <Compile Include="Controllers\API\SupplierController.cs" />
+    <Compile Include="Controllers\API\SuppliesController.cs" />
+    <Compile Include="Models\API\Order.cs" />
+    <Compile Include="Models\Enumerators\Units.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\Compose.cs" />
+    <Compile Include="Models\APIFolder\APIFunctions.cs" />
+    <Compile Include="Models\API\Compose.cs" />
     <Compile Include="Models\CuerosContext.cs" />
-    <Compile Include="Models\Material.cs" />
-    <Compile Include="Models\Picture.cs" />
-    <Compile Include="Models\Product.cs" />
-    <Compile Include="Models\Supplier.cs" />
-    <Compile Include="Models\Supplies.cs" />
+    <Compile Include="Models\API\Material.cs" />
+    <Compile Include="Models\API\Picture.cs" />
+    <Compile Include="Models\API\Product.cs" />
+    <Compile Include="Models\Repository\MaterialRepository.cs" />
+    <Compile Include="Models\Repository\OrderRepository.cs" />
+    <Compile Include="Models\Repository\ProductRepository.cs" />
+    <Compile Include="Models\API\Supplier.cs" />
+    <Compile Include="Models\API\Supplies.cs" />
+    <Compile Include="Models\Repository\SupplierRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

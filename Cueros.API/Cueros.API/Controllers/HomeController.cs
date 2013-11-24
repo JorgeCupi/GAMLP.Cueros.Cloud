@@ -11,13 +11,6 @@ namespace Cueros.API.Controllers
     {
         public ActionResult Index()
         {
-            var picture = new Picture()
-            {
-                Decription = "Descripcion de prueba",
-                URL = "djksajdlsa.jpg"
-            };
-            CuerosContext.DB.Pictures.Add(picture);
-            CuerosContext.DB.SaveChanges();
             return View();
         }
     }
