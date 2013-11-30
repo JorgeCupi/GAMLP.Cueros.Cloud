@@ -219,6 +219,7 @@
     <Compile Include="Controllers\API\ErrorHandler\APIErrorHandlerAttribute.cs" />
     <Compile Include="Controllers\API\ErrorHandler\JsonMessage.cs" />
     <Compile Include="Controllers\API\ComposeController.cs" />
+    <Compile Include="Controllers\API\OrderController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\API\MaterialController.cs" />
     <Compile Include="Controllers\API\PictureController.cs" />
@@ -313,6 +314,7 @@
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\HelpPageApiModel.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ApiGroup.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
+    <Content Include="ClassDiagram1.cd" />
     <None Include="Properties\PublishProfiles\cadepiacueros - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\cadepiacueros - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
@@ -358,6 +360,7 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Product\Add.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

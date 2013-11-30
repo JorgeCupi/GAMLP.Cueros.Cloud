@@ -14,7 +14,7 @@ namespace Cueros.API.Models.Repository
         {
             try
             {
-                var result = CuerosContext.DB.Orders.ToList();
+                var result = CuerosContext.DB.Orders.ToList(); 
                 return APIFunctions.SuccessResult(result, JsonMessage.Success);
             }
             catch (Exception e)

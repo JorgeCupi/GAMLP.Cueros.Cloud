@@ -16,7 +16,7 @@ namespace Cueros.API.Models
         public string Line { get; set; }
         public string Model { get; set; }
         public string Season { get; set; }
-        public TimeSpan ProductionTime { get; set; }
+        public int ProductionTime { get; set; }
         public virtual ICollection<Picture> Pictures { get; set; }
     }
 }
