@@ -9,6 +9,7 @@ namespace Cueros.API.Models.API
     public class Order
     {
         public int OrderID { get; set; }
+
         public DateTime Date { get; set; }
         
         public int ProductID { get; set; }

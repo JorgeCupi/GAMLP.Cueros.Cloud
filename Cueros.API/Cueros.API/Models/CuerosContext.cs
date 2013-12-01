@@ -33,6 +33,7 @@ namespace Cueros.API.Models
         {
             protected override void Seed(CuerosContext context)
             {
+                /*
                 #region Product
                 context.Products.Add(new Product()
                     {
@@ -104,6 +105,7 @@ namespace Cueros.API.Models
                     ProductID=1,
                 });
                 #endregion
+                */
                 base.Seed(context);
             }
         }
