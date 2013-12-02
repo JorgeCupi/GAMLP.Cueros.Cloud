@@ -226,6 +226,8 @@
     <Compile Include="Controllers\API\ProductController.cs" />
     <Compile Include="Controllers\API\SupplierController.cs" />
     <Compile Include="Controllers\API\SuppliesController.cs" />
+    <Compile Include="Models\API\BelongsTo.cs" />
+    <Compile Include="Models\API\Category.cs" />
     <Compile Include="Models\API\Order.cs" />
     <Compile Include="Models\Enumerators\Units.cs" />
     <Compile Include="Global.asax.cs">
