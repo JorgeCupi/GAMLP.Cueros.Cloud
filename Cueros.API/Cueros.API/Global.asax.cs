@@ -25,7 +25,7 @@ namespace Cueros.API
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
 
-            Database.SetInitializer<CuerosContext>(new Cueros.API.Models.CuerosContext.MyGymInitializer());
+            Database.SetInitializer<CuerosContext>(new Cueros.API.Models.CuerosContext.CuerosInitializer());
         }
     }
 }

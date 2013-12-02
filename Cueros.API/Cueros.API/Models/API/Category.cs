@@ -7,7 +7,7 @@ namespace Cueros.API.Models
 {
     public class Category
     {
-        public string CategoryID { get; set; }
+        public int CategoryID { get; set; }
 
         public string Name { get; set; }
 

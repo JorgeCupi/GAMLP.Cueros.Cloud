@@ -8,13 +8,13 @@ namespace Cueros.API.Models.API
 {
     public class BelongsTo
     {
-        public int BelongsID { get; set; }
-
+        public int BelongsToID { get; set; }
         public int ProductID { get; set; }
-        public int CategorylID { get; set; }
+        public int CategoryID { get; set; }
+
         [ForeignKey("ProductID")]
-        public virtual Product Product{ get; set; }
+        public virtual Product Product { get; set; }
         [ForeignKey("CategoryID")]
-        public virtual Category Category{ get; set; }
+        public virtual Category Category { get; set; }
     }
 }
