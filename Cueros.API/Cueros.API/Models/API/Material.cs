@@ -15,7 +15,6 @@ namespace Cueros.API.Models
         public double UnitPrice { get; set; }
         public double Quantity { get; set; }
         public virtual Picture Picture { get; set; }
-        public virtual ICollection<Supplier> Suppliers { get; set; }
         public string Color { get; set; }
     }
 }

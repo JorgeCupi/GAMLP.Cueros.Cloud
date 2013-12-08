@@ -20,14 +20,11 @@ namespace Cueros.API.Models.Repository
                 return APIFunctions.ErrorResult(e.Message);
             }
         }
-        public object GetByCategoryID(int CategoryID)
+        public object GetByCategoryID(int categoryID)
         {
             try
             {
-                return APIFunctions.SuccessResult(
-                    from x in CuerosContext.DB.BelongsTo.ToList()
-                    where x.CategoryID == CategoryID
-                    select x.Product, JsonMessage.Success);
+                return APIFunctions.SuccessResult(CuerosContext.DB.Categories.Find(categoryID), JsonMessage.Success);
             }
             catch (Exception e)
             {

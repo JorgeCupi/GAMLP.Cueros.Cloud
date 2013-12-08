@@ -25,7 +25,6 @@ namespace Cueros.API.Models
         public DbSet<Supplies> Supplies { get; set; }
         public DbSet<Order> Orders { get; set; }
         public DbSet<Category> Categories {get;set;}
-        public DbSet<BelongsTo> BelongsTo { get; set; }
 
         public CuerosContext():base()
         {

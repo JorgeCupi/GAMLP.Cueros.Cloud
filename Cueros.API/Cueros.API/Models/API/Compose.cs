@@ -13,6 +13,7 @@ namespace Cueros.API.Models
 
         public int ProductID { get; set; }
         public int MaterialID { get; set; }
+
         public int Quantity { get; set; }
         public Unit Unit { get; set; }
         [ForeignKey("MaterialID")]

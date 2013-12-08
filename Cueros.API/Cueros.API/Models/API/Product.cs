@@ -16,8 +16,11 @@ namespace Cueros.API.Models
         public int ProductionTime { get; set; }
         public int SoldUnits { get; set;}
         public Category Category{ get; set; }
-        public virtual ICollection<Picture> Pictures { get; set; }
-        public virtual ICollection<Material> Materials{ get; set; }
+        public virtual ICollection<Picture> Pictures { get; set; }  
         public DateTime OnSaleDate { get; set; }
+        public Product()
+        {
+            Pictures = new HashSet<Picture>();
+        }
     }
 }

@@ -15,6 +15,5 @@ namespace Cueros.API.Models
         public string Country { get; set; }
         public string Email { get; set; }
         public Picture Picture { get; set; }
-        public virtual ICollection<Material> Materials { get; set; }
     }
 }
