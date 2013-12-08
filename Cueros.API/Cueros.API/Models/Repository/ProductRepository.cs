@@ -14,7 +14,7 @@ namespace Cueros.API.Models
         {
             try
             {
-                return APIFunctions.SuccessResult(CuerosContext.DB.Products.ToList(), JsonMessage.Success);
+                return APIFunctions.SuccessResult(CuerosContext.DB.Products.ToList(), "JDKLASJDKLJDKLSKLS!");
             }
             catch (Exception e)
             {
